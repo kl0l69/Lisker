@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml+png" href="/loly-creation.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lisker - Keep your links, everywhere.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                '50': 'rgb(var(--color-primary-50) / <alpha-value>)',
+                '100': 'rgb(var(--color-primary-100) / <alpha-value>)',
+                '200': 'rgb(var(--color-primary-200) / <alpha-value>)',
+                '300': 'rgb(var(--color-primary-300) / <alpha-value>)',
+                '400': 'rgb(var(--color-primary-400) / <alpha-value>)',
+                '500': 'rgb(var(--color-primary-500) / <alpha-value>)',
+                '600': 'rgb(var(--color-primary-600) / <alpha-value>)',
+                '700': 'rgb(var(--color-primary-700) / <alpha-value>)',
+                '800': 'rgb(var(--color-primary-800) / <alpha-value>)',
+                '900': 'rgb(var(--color-primary-900) / <alpha-value>)',
+                '950': 'rgb(var(--color-primary-950) / <alpha-value>)',
+              },
+            },
+            dropShadow: {
+              'glow-sm': '0 0 4px rgb(var(--color-primary-500) / 0.8)',
+              'glow-md': '0 0 10px rgb(var(--color-primary-500) / 0.6)',
+              'glow-lg': '0 0 15px rgb(var(--color-primary-500) / 0.5)',
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0', transform: 'translateX(-10px)' },
+                '100%': { opacity: '1', transform: 'translateX(0)' },
+              },
+              'wiggle': {
+                '0%, 100%': { transform: 'rotate(-3deg)' },
+                '50%': { transform: 'rotate(3deg)' },
+              },
+              'fire-breath': {
+                '0%, 100%': { transform: 'scale(1, 1)', opacity: '1' },
+                '50%': { transform: 'scale(1.2, 1.1) translateY(-1px)', opacity: '0.85' },
+              },
+              'card-enter': {
+                '0%': { opacity: '0', transform: 'translateY(20px) scale(0.98)' },
+                '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+              },
+            },
+            animation: {
+              'fade-in': 'fade-in 0.2s ease-in-out',
+              'wiggle': 'wiggle 2s ease-in-out infinite',
+              'fire-breath': 'fire-breath 1.2s ease-in-out infinite',
+              'card-enter': 'card-enter 0.4s ease-out forwards',
+            },
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      /* Solid Theme */
+      .theme-solid .surface-background {
+        @apply bg-white dark:bg-gray-800 shadow-md border-transparent backdrop-filter-none;
+      }
+      .theme-solid .modal-background {
+        @apply bg-white dark:bg-gray-800 backdrop-filter-none;
+      }
+      .theme-solid .header-background-scrolled {
+        @apply bg-white dark:bg-gray-900 backdrop-filter-none border-gray-200 dark:border-gray-700;
+      }
+
+      /* Glass Theme (default) */
+      .theme-glass .surface-background {
+        @apply bg-white/60 dark:bg-gray-800/60 backdrop-blur-lg border border-white/20;
+      }
+       .theme-glass .modal-background {
+         @apply bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-white/20;
+      }
+       .theme-glass .header-background-scrolled {
+        @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-gray-200 dark:border-gray-700;
+      }
+
+      /* Neon Theme (primarily for dark mode) */
+      .dark.theme-neon .surface-background {
+        @apply bg-black/50 border border-primary-500/30 backdrop-blur-md;
+      }
+      .dark.theme-neon .modal-background {
+        @apply bg-black/70 border border-primary-500/30 backdrop-blur-lg;
+      }
+      .dark.theme-neon .header-background-scrolled {
+        @apply bg-black/80 backdrop-blur-lg border-primary-500/30;
+      }
+      .dark.theme-neon .neon-text {
+        @apply text-primary-400;
+      }
+       .dark.theme-neon .neon-heading {
+        @apply text-primary-300 drop-shadow-glow-sm;
+      }
+       .dark.theme-neon .neon-border {
+        @apply border-primary-500/30;
+      }
+      .dark.theme-neon .neon-hover-border:hover {
+        @apply border-primary-500/70 shadow-lg shadow-primary-500/20;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.min.js"></script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "zustand/": "https://aistudiocdn.com/zustand@^5.0.8/",
+    "zustand": "https://aistudiocdn.com/zustand@^5.0.8"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

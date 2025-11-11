@@ -1,0 +1,5 @@
+{
+  "name": "Lisker",
+  "description": "Lisker is a smart bookmark manager that helps users save, organize, and access their favorite links easily. It features a clean UI, localStorage for data persistence, light/dark modes, and tools for organizing links with tags and folders.",
+  "requestFramePermissions": []
+}
