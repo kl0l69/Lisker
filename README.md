@@ -1,8 +1,3 @@
-
-
-##  README.md
-
-````markdown
 # Lisker
 
 Lisker is a **smart, minimal bookmark manager** that helps users save, organize, and access their favorite links easily.  
@@ -27,7 +22,7 @@ You can switch between multiple visual themes, work offline using localStorage, 
 - Export and import bookmarks.
 - Responsive and minimal UI.
 
----
+
 
 ## Tech Stack
 
@@ -38,7 +33,7 @@ You can switch between multiple visual themes, work offline using localStorage, 
 - **Build Tool:** Vite
 - **UI Libraries:** Framer Motion / Recharts (optional)
 
----
+
 
 ## Getting Started
 
@@ -46,7 +41,7 @@ You can switch between multiple visual themes, work offline using localStorage, 
    ```bash
    git clone https://github.com/kl0l69/Lisker.git
    cd Lisker
-````
+
 
 2. Install dependencies (if using React or Vite):
 
@@ -90,18 +85,9 @@ Then deploy the generated `dist/` folder to:
 * Vercel
 * GitHub Pages
 
----
-
-## Author
-
-**Mohamed Hussein **
-
-* GitHub: [@kl0l69](https://github.com/kl0l69)
-* Email: [ayrn194@gmail.com](mailto:ayrn194@gmail.com)
-* Location: Egypt
 
 
----
+
 
 ## Future Enhancements
 
@@ -110,6 +96,13 @@ Then deploy the generated `dist/` folder to:
 * Browser extension version
 * Shared collections between users
 
----
+## Author
+
+**Mohamed Hussein **
+
+* GitHub: [@kl0l69](https://github.com/kl0l69)
+* Email: [gmail.com](mailto:ayrn194@gmail.com)
+* Location: Egypt
+<img width="1024" height="1024" alt="loly-creation" src="https://github.com/user-attachments/assets/344fdbcb-b5c0-4e83-a3ee-797b2740739d" />
 
 
